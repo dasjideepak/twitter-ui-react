@@ -1,14 +1,14 @@
 import React from "react";
-import Header from "../src/components/Header";
-import Footer from "../src/components/Footer";
+import LeftSideBar from "../src/components/LeftSideBar.jsx";
+import MiddleBar from "../src/components/MiddleBar.jsx";
+import RightSideBar from "../src/components/RightSideBar.jsx";
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <Header />
-      <Footer />
+    <div class="container">
+      <LeftSideBar />
+      <MiddleBar />
+      <RightSideBar />
     </div>
   );
 }
-
-export default App;
