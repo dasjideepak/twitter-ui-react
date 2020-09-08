@@ -9,7 +9,7 @@ import { CgMoreO } from "react-icons/cg";
 
 const LEFT_NAV_TAB = (props) => {
   return (
-    <div class="tab">
+    <div className="tab">
       {props.icon}
       <h3>{props.text}</h3>
     </div>
@@ -25,7 +25,7 @@ const LeftSideBar = () => {
           src="https://pngimg.com/uploads/twitter/twitter_PNG15.png"
           alt="logo"
         />
-        <div class="nav-tab-container">
+        <div className="nav-tab-container">
           <LEFT_NAV_TAB icon={<ImHome2 />} text="Home" />
           <LEFT_NAV_TAB icon={<FiHash />} text="Explore" />
           <LEFT_NAV_TAB icon={<IoMdNotifications />} text="Notifications" />
@@ -36,11 +36,11 @@ const LeftSideBar = () => {
           <LEFT_NAV_TAB icon={<CgMoreO />} text="More" />
         </div>
         <div>
-          <button class="tweet-btn">Tweet</button>
+          <button className="tweet-btn">Tweet</button>
         </div>
       </div>
       <div className="bottom-content flex">
-        <div class="flex">
+        <div className="flex">
           <img
             className="user-avatar"
             src="https://avatars2.githubusercontent.com/u/38307844?s=460&u=f545a10c52359525a21efe75562a272f241ab57d&v=4"

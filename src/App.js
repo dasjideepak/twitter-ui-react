@@ -5,7 +5,7 @@ import RightSideBar from "../src/components/RightSideBar.jsx";
 
 export default function App() {
   return (
-    <div class="container">
+    <div className="container">
       <LeftSideBar />
       <MiddleBar />
       <RightSideBar />
