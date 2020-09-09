@@ -1,5 +1,5 @@
 import React from "react";
-import WHO_TO_FOLLOW from "../user.js";
+import WHO_TO_FOLLOW from "../userData.js";
 
 const FollowUser = (props) => {
   return (
@@ -17,18 +17,30 @@ const FollowUser = (props) => {
 };
 
 const RightSideBar = () => {
+  let key = 0;
   return (
     <div className="right-side-bar">
       <div className="who-to-follow-sec">
         <h1>Who to follow</h1>
         {WHO_TO_FOLLOW.map((el) => (
           <FollowUser
+            key={key++}
             name={el.name}
             userName={el.userName}
             avatar={el.avatar}
           />
         ))}
         <h2>Show more</h2>
+      </div>
+      <div className="footer">
+        <div className="flex">
+          <h6>Terms</h6>
+          <h6>Privacy policy</h6>
+          <h6>Cookies</h6>
+          <h6>Ads info</h6>
+          <h6>More</h6>
+        </div>
+        <h5 className="text">© 2020 Twitter, Inc.</h5>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import tweetsData from "../data";
 
 let UserTweets = (props) => {
   return (
-    <a href="http://localhost:3000/" className="tweet-container">
+    <a href="#" className="tweet-container">
       <div className="img-sec">
         <img className="user-avatar" src={props.avatar} alt="user-avatar" />
       </div>
@@ -57,6 +57,7 @@ const MiddleBar = () => {
   let key = 0;
   return (
     <div className="middle-bar">
+      <h1 className="heading">Home</h1>
       {tweetsData.map((el) => (
         <UserTweets
           key={key++}

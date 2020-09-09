@@ -2,7 +2,13 @@
   border-left: 1px solid rgb(56, 68, 77);
   border-right: 1px solid rgb(56, 68, 77);
   width: 48%;
-  padding: 12px 0;
+  padding: 8px 0;
+  .heading {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 4px 12px;
+    color: rgb(245, 239, 239);
+  }
   .tweet-container {
     padding: 16px;
     border-top: 1px solid rgb(56, 68, 77);

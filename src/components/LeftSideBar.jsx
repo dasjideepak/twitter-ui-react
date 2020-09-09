@@ -9,7 +9,7 @@ import { CgMoreO } from "react-icons/cg";
 
 const LEFT_NAV_TAB = (props) => {
   return (
-    <a href="http://localhost:3000" className="tab">
+    <a href="#" className="tab">
       {props.icon}
       <h3>{props.text}</h3>
     </a>
