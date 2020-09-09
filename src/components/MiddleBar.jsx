@@ -6,7 +6,7 @@ import tweetsData from "../data";
 
 let UserTweets = (props) => {
   return (
-    <div className="tweet-container">
+    <a href="http://localhost:3000/" className="tweet-container">
       <div className="img-sec">
         <img className="user-avatar" src={props.avatar} alt="user-avatar" />
       </div>
@@ -49,7 +49,7 @@ let UserTweets = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

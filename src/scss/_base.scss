@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(21, 32, 43);
+  color: white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
