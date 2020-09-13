@@ -1,22 +1,7 @@
 import React from "react";
-import WHO_TO_FOLLOW from "../userData.js";
+import { WHO_TO_FOLLOW } from "../data.js";
 
-const FollowUser = (props) => {
-  return (
-    <div className="user-follow flex">
-      <div className="flex">
-        <img src={props.avatar} alt="user-avatar" />
-        <div className="user-name">
-          <h3>{props.name}</h3>
-          <h4>@{props.userName}</h4>
-        </div>
-      </div>
-      <button>Follow</button>
-    </div>
-  );
-};
-
-const RightSideBar = () => {
+export default function RightSideBar() {
   let key = 0;
   return (
     <div className="right-side-bar">
@@ -44,6 +29,19 @@ const RightSideBar = () => {
       </div>
     </div>
   );
-};
+}
 
-export default RightSideBar;
+function FollowUser(props) {
+  return (
+    <div className="user-follow flex">
+      <div className="flex">
+        <img src={props.avatar} alt="user-avatar" />
+        <div className="user-name">
+          <h3>{props.name}</h3>
+          <h4>@{props.userName}</h4>
+        </div>
+      </div>
+      <button>Follow</button>
+    </div>
+  );
+}

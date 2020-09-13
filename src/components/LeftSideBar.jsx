@@ -7,16 +7,7 @@ import { RiFileList2Line } from "react-icons/ri";
 import { HiOutlineUser } from "react-icons/hi";
 import { CgMoreO } from "react-icons/cg";
 
-const LEFT_NAV_TAB = (props) => {
-  return (
-    <a href="#" className="tab">
-      {props.icon}
-      <h3>{props.text}</h3>
-    </a>
-  );
-};
-
-const LeftSideBar = () => {
+export default function LeftSideBar() {
   return (
     <div className="left-side-bar flex">
       <div className="top-content">
@@ -55,6 +46,13 @@ const LeftSideBar = () => {
       </div>
     </div>
   );
-};
+}
 
-export default LeftSideBar;
+function LEFT_NAV_TAB(props) {
+  return (
+    <a href="##" className="tab">
+      {props.icon}
+      <h3>{props.text}</h3>
+    </a>
+  );
+}
