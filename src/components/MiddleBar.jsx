@@ -2,11 +2,35 @@ import React from "react";
 import { FiChevronDown, FiUpload } from "react-icons/fi";
 import { BiMessageRounded } from "react-icons/bi";
 import { AiOutlineRetweet, AiOutlineHeart } from "react-icons/ai";
-import tweetsData from "../data";
+import { TWEETS_DATA } from "../data.js";
 
-let UserTweets = (props) => {
+export default function MiddleBar() {
+  let key = 0;
   return (
-    <a href="#" className="tweet-container">
+    <div className="middle-bar">
+      <h1 className="heading">Home</h1>
+      {TWEETS_DATA.map((el) => (
+        <UserTweets
+          key={key++}
+          name={el.name}
+          username={el.username}
+          tweetText={el.tweetText}
+          avatar={el.avatar}
+          media={el.media}
+          replies={el.replies}
+          retweets={el.retweets}
+          likes={el.likes}
+          date={el.date}
+          hastags={el.hastags}
+        />
+      ))}
+    </div>
+  );
+}
+
+function UserTweets(props) {
+  return (
+    <a href="##" className="tweet-container">
       <div className="img-sec">
         <img className="user-avatar" src={props.avatar} alt="user-avatar" />
       </div>
@@ -51,30 +75,4 @@ let UserTweets = (props) => {
       </div>
     </a>
   );
-};
-
-const MiddleBar = () => {
-  let key = 0;
-  return (
-    <div className="middle-bar">
-      <h1 className="heading">Home</h1>
-      {tweetsData.map((el) => (
-        <UserTweets
-          key={key++}
-          name={el.name}
-          username={el.username}
-          tweetText={el.tweetText}
-          avatar={el.avatar}
-          media={el.media}
-          replies={el.replies}
-          retweets={el.retweets}
-          likes={el.likes}
-          date={el.date}
-          hastags={el.hastags}
-        />
-      ))}
-    </div>
-  );
-};
-
-export default MiddleBar;
+}

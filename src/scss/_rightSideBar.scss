@@ -25,22 +25,25 @@
         border-radius: 50%;
       }
       .user-name {
+        font-size: 15px;
         padding-left: 12px;
         line-height: 1.3;
         h3 {
-          font-weight: 500;
+          font-weight: bold;
         }
         h4 {
-          color: grey;
+          color: #8899a6;
+          font-weight: normal;
         }
       }
       button {
         cursor: pointer;
-        border: 2px solid rgb(36, 163, 248);
+        border: 2px solid #1da1f2;
         height: 28px;
-        color: rgb(36, 163, 248);
+        color: #1da1f2;
         width: 80px;
-        font-weight: 600;
+        font-size: 15px;
+        font-weight: bold;
         border-radius: 24px;
       }
       button:hover {
@@ -53,9 +56,9 @@
     }
     h2 {
       padding: 12px;
-      color: rgb(36, 163, 248);
-      font-weight: 500;
-      font-size: 18px;
+      color: #1da1f2;
+      font-weight: normal;
+      font-size: 15px;
     }
     h2:hover {
       background-color: rgb(29, 40, 51);
@@ -65,9 +68,9 @@
   }
   .footer {
     padding: 12px 24px;
-    color: rgb(185, 191, 196);
-    font-size: 14px;
-    font-weight: 500;
+    color: #8899a6;
+    font-size: 13px;
+    font-weight: normal;
     .flex > * {
       padding: 0 2px;
       cursor: pointer;
